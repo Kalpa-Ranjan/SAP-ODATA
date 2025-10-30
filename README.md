@@ -32,21 +32,9 @@ ALL Web services are APIs, but not all APIs are web services.
 
 
 - Status  line 
-1XX :- Informational → Processing 102
-
-2XX :- Success →Ok 200, Ok Created 201
-
-3XX :- Redirection → moved to new URL 301
-
-4XX :- Client Side Error → Bad request 400
-
-5XX:- Server Side Error → Not implemented 501
-
 
 
 - Message body
-Contains recourse representation
-
 -  Header
 
 
