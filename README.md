@@ -21,9 +21,9 @@ ODATA —> Open Data Protocol
 ## Four different ways API can work
 
     1. SOAP APIs:- XML, Used in past
-    1. RPC APIs:- Remote Procedure Calls
-    1. WebSocket APIs:- Used JSON objects, two way communication
-    1. REST API: - Most Popular
+    2. RPC APIs:- Remote Procedure Calls
+    3. WebSocket APIs:- Used JSON objects, two way communication
+    4. REST API: - Most Popular
     
 
 # REST Principles/ 
@@ -57,18 +57,18 @@ flowchart LR
 
     It indicates Server transfers information in a standard format.
 
-    1. The formatted resource is called a Representation in REST.
-    1. Request should identify recourses by using URI
-    1. Clients have enough information in the resource representation to modify, delete the resource. The server meets this condition by sending metadata that describes the resource further. 
-    1. Client receive information about how to process the representation further. The server achieves this by sending self descriptive messages that contain metadata about how the client can best use them.
-    1. For other related resourses server sends hyperlink in the represenation. So client can dynamically discover more resources.
+    5. The formatted resource is called a Representation in REST.
+    6. Request should identify recourses by using URI
+    7. Clients have enough information in the resource representation to modify, delete the resource. The server meets this condition by sending metadata that describes the resource further. 
+    8. Client receive information about how to process the representation further. The server achieves this by sending self descriptive messages that contain metadata about how the client can best use them.
+    9. For other related resourses server sends hyperlink in the represenation. So client can dynamically discover more resources.
     
 
 ## Statelessness
 
     
 
-    1. Communication method in which the server completes every client request independently of all previous request.
+    10. Communication method in which the server completes every client request independently of all previous request.
 ## Layered System
 
     
@@ -146,7 +146,7 @@ ALL Web services are APIs, but not all APIs are web services.
 -  Header
 
 
-![Image](https://prod-files-secure.s3.us-west-2.amazonaws.com/957548da-634d-4c7f-b0aa-dd4d7a9da4c5/de3257b0-99da-4a97-9108-71d731170890/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QKTYUKOY%2F20251030%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251030T230359Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjED4aCXVzLXdlc3QtMiJGMEQCIGWDYXPi4%2Bn6yv%2BIvCF7ymLCVtlJoDLEY8h3o8Z9u9mYAiAVZZwajTZZ15l9TSbg%2BQLbxz3M5Uglxa4dgXufKdRXdyqIBAj3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMMOo%2FpWmWWVIMXGa%2FKtwD%2Brg5L0NjQHOi2ISj5x%2FPSAtBUDbI7wlzTw3OFNHkNVBVjbtYykL%2F0akOHkA%2FAMAVOZ6q8DKKMgWrWC5VM8L6%2F46z0%2BZyhUjKN6TxaNXPvw7s%2BwUtZ7gFzKpTVJt5X4cR8aHZ171HQERthVp0rebtWVhpKhNTkll6IvgNVPl1kAtVC1vWRHC9TjFuAiJULM6AF0NKCP1TSEtHef8yPu%2BZX1IOuRm9d4M6N39%2Be0tyKaKPFGay63%2F46LCU5Z1XtzdwwJvtyf59iSldrb%2FYSXPSf4W3PdrhbbWFCjnQ2EsvAs94iqv1IYr8%2FQ1JpQbVxj9CCIYRQPLf6V9%2F2KZw9PdNPQ6db0pzm8gL7E1k6RRSgRWdGGY0ytZy4N7Tb4Loex%2F0fr7N6VmSCcA3Ud7n%2FP6qqqX7l6a5OhtEbwrsNj3S0GM5iEomwUow%2BvLT1An4O%2BpqmoanXkyzy0XrdIqQp78jRhr7LDM1x%2FXvbZDTouNoCo1D63EnPxI32MtkruopTwHxiTssbkG0glkxedssI387VaxMhD9U7Fza%2BwbkHBm7GRiyGMu8tvwJs43feBTarwsBZW19wKOilVlrGgbgTm7m7pO3eyi21%2BEiYNyLPpSR0zNqhS6sY6tcQNDFV1YwlcaPyAY6pgEB85%2BZKEfdUziCP%2F2M102WMAetNUSymUQPm%2FRa0DGx%2FE0bkBHw2RRNt46wfLq8p3hzbn3bPowaWS8Hieh45N1eN6zQ59hIqleGC3YRsxhUvuE9SpiSEG22v2EV1Kd9DHiww1iVEgzEyGTU4uzsGHThS348AxWCukhOzdAO2oUu7oZ%2Fes56dB9q%2BCZf%2F4X6V5pvOoMW4NVJ9khmxKpdoKslKrc08AOY&X-Amz-Signature=e29ccce024954be59dfe398b5971dad86a47e17d6290d03369a39ccdfd1ad009&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+![Image](https://prod-files-secure.s3.us-west-2.amazonaws.com/957548da-634d-4c7f-b0aa-dd4d7a9da4c5/de3257b0-99da-4a97-9108-71d731170890/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UUO2NOS2%2F20251030%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251030T230546Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjED4aCXVzLXdlc3QtMiJIMEYCIQCoWQ0WttbqHDDfMUQswxtkcH5p9yBkNaVPVGS1hx591wIhAMW%2BocZ3y1sABn4DuXYOzlGW6Gq141ur1JRpaOS3X%2FEHKogECPf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igx4OolVNL92Y%2BKx070q3ANRw41Q8CQCaxI0x4fnQoJXQLslOuGXW2vGPLKa9DtyqxSgZLTncRwvuRu3u7oq8usTJrI3AkDuGwGGRwTCxD94HIU7t5cbstC623YdJdPI4IyTRxYYbfhD45XKAFNY14J%2BRp9DCWuO3WzrecyJJolIcnfseUAmoNo2kwjxzFfKkOM0hhjudFv2uPZVQGBkoZFz1ixZP0MMS2iSTq9P9lg%2B%2BojIXcfqmJRac9x3cgTW39tS03nSNt4bMDxURqorcE8Wuh4ohr7johr6UAAMZxuWw3GCNuBjhiCgf8WOchCKnA3nuoOXIZz6S7oDpVmWGhW%2BBS%2BM4DiR0sGxBfS6mN%2FymATvTlF%2BOoBxaUPwbHRmCw%2BiV2AnjSOsEr0o4KFfN%2BwXiqs%2FnlldPPOlSAgFe1%2B2BcoJo7G6pqBshX%2F9V5Xlga7Oqb%2BlARN1G3%2FDTFOXQ2qribCAStC2eJWVGFWiUyWOiL5bhea9Cc%2B2v0sMURPIwGPL9sRskYNj9mcnXmmyGP2nPU1g7m2hek5wdskRbS%2BJEHbg2ETHgFxzMpqcaFstQvo8TzpIKCEi4ji0QRx%2BSYJmNhrob80e3zqD3NhJTatAnTLUwQrChVfNEjTVTGN2eLNNA8Fxs1uD6ZXX0DDzxo%2FIBjqkAaCT4jp7SAnYJTU4A5geYNMFxgX%2Bm3e8O8mPlBMTMliPq009ikS%2BeBhU002Y%2BCw%2B59Apd%2BwESBED42lXWsfm%2BEdgJA9m2uescTWzDXui2iz%2BLGUyVyn%2FUGW8%2FdvJqUnGl6ltdhFUf%2F8e4pnMnEqqaDupAH4FJuX1HKi%2FsE%2BZx1aqvxRFk96WEujcEUlOTt7PS4hWvCQtZrNE8qG%2BCIxaULgPWSKO&X-Amz-Signature=75e25017f5480b941abecfc1d6fc3215a79c01ae1f3acbe1fb2e0d8479cdca9b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
 
 
@@ -156,7 +156,7 @@ HTTP method: GET
 
 
 
-![Image](https://prod-files-secure.s3.us-west-2.amazonaws.com/957548da-634d-4c7f-b0aa-dd4d7a9da4c5/dc56f68d-8daf-4b31-bc04-5bd2547ffac9/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QKTYUKOY%2F20251030%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251030T230359Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjED4aCXVzLXdlc3QtMiJGMEQCIGWDYXPi4%2Bn6yv%2BIvCF7ymLCVtlJoDLEY8h3o8Z9u9mYAiAVZZwajTZZ15l9TSbg%2BQLbxz3M5Uglxa4dgXufKdRXdyqIBAj3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMMOo%2FpWmWWVIMXGa%2FKtwD%2Brg5L0NjQHOi2ISj5x%2FPSAtBUDbI7wlzTw3OFNHkNVBVjbtYykL%2F0akOHkA%2FAMAVOZ6q8DKKMgWrWC5VM8L6%2F46z0%2BZyhUjKN6TxaNXPvw7s%2BwUtZ7gFzKpTVJt5X4cR8aHZ171HQERthVp0rebtWVhpKhNTkll6IvgNVPl1kAtVC1vWRHC9TjFuAiJULM6AF0NKCP1TSEtHef8yPu%2BZX1IOuRm9d4M6N39%2Be0tyKaKPFGay63%2F46LCU5Z1XtzdwwJvtyf59iSldrb%2FYSXPSf4W3PdrhbbWFCjnQ2EsvAs94iqv1IYr8%2FQ1JpQbVxj9CCIYRQPLf6V9%2F2KZw9PdNPQ6db0pzm8gL7E1k6RRSgRWdGGY0ytZy4N7Tb4Loex%2F0fr7N6VmSCcA3Ud7n%2FP6qqqX7l6a5OhtEbwrsNj3S0GM5iEomwUow%2BvLT1An4O%2BpqmoanXkyzy0XrdIqQp78jRhr7LDM1x%2FXvbZDTouNoCo1D63EnPxI32MtkruopTwHxiTssbkG0glkxedssI387VaxMhD9U7Fza%2BwbkHBm7GRiyGMu8tvwJs43feBTarwsBZW19wKOilVlrGgbgTm7m7pO3eyi21%2BEiYNyLPpSR0zNqhS6sY6tcQNDFV1YwlcaPyAY6pgEB85%2BZKEfdUziCP%2F2M102WMAetNUSymUQPm%2FRa0DGx%2FE0bkBHw2RRNt46wfLq8p3hzbn3bPowaWS8Hieh45N1eN6zQ59hIqleGC3YRsxhUvuE9SpiSEG22v2EV1Kd9DHiww1iVEgzEyGTU4uzsGHThS348AxWCukhOzdAO2oUu7oZ%2Fes56dB9q%2BCZf%2F4X6V5pvOoMW4NVJ9khmxKpdoKslKrc08AOY&X-Amz-Signature=b5602d46a0330f8d45b6f40011b7e4fbbb1e59e5ed9e9c2b8ba24c5e68f69eb8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+![Image](https://prod-files-secure.s3.us-west-2.amazonaws.com/957548da-634d-4c7f-b0aa-dd4d7a9da4c5/dc56f68d-8daf-4b31-bc04-5bd2547ffac9/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UUO2NOS2%2F20251030%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251030T230546Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjED4aCXVzLXdlc3QtMiJIMEYCIQCoWQ0WttbqHDDfMUQswxtkcH5p9yBkNaVPVGS1hx591wIhAMW%2BocZ3y1sABn4DuXYOzlGW6Gq141ur1JRpaOS3X%2FEHKogECPf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igx4OolVNL92Y%2BKx070q3ANRw41Q8CQCaxI0x4fnQoJXQLslOuGXW2vGPLKa9DtyqxSgZLTncRwvuRu3u7oq8usTJrI3AkDuGwGGRwTCxD94HIU7t5cbstC623YdJdPI4IyTRxYYbfhD45XKAFNY14J%2BRp9DCWuO3WzrecyJJolIcnfseUAmoNo2kwjxzFfKkOM0hhjudFv2uPZVQGBkoZFz1ixZP0MMS2iSTq9P9lg%2B%2BojIXcfqmJRac9x3cgTW39tS03nSNt4bMDxURqorcE8Wuh4ohr7johr6UAAMZxuWw3GCNuBjhiCgf8WOchCKnA3nuoOXIZz6S7oDpVmWGhW%2BBS%2BM4DiR0sGxBfS6mN%2FymATvTlF%2BOoBxaUPwbHRmCw%2BiV2AnjSOsEr0o4KFfN%2BwXiqs%2FnlldPPOlSAgFe1%2B2BcoJo7G6pqBshX%2F9V5Xlga7Oqb%2BlARN1G3%2FDTFOXQ2qribCAStC2eJWVGFWiUyWOiL5bhea9Cc%2B2v0sMURPIwGPL9sRskYNj9mcnXmmyGP2nPU1g7m2hek5wdskRbS%2BJEHbg2ETHgFxzMpqcaFstQvo8TzpIKCEi4ji0QRx%2BSYJmNhrob80e3zqD3NhJTatAnTLUwQrChVfNEjTVTGN2eLNNA8Fxs1uD6ZXX0DDzxo%2FIBjqkAaCT4jp7SAnYJTU4A5geYNMFxgX%2Bm3e8O8mPlBMTMliPq009ikS%2BeBhU002Y%2BCw%2B59Apd%2BwESBED42lXWsfm%2BEdgJA9m2uescTWzDXui2iz%2BLGUyVyn%2FUGW8%2FdvJqUnGl6ltdhFUf%2F8e4pnMnEqqaDupAH4FJuX1HKi%2FsE%2BZx1aqvxRFk96WEujcEUlOTt7PS4hWvCQtZrNE8qG%2BCIxaULgPWSKO&X-Amz-Signature=0fa5c66b7ad915695f2a0e16f4630ca0fe6d72f72fcd1a6c102b31b431c24097&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 
 
 
@@ -173,8 +173,8 @@ What is ODATA?
 Applying and building on Web technologies such as
 
   1. HTTP
-  1. Atom publishing Protocol
-  1. RSS ( Really Simple Syndication) 
+  2. Atom publishing Protocol
+  3. RSS ( Really Simple Syndication) 
 
 
 Provide access information from Variety of applications.
