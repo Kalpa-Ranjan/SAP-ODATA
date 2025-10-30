@@ -1,2 +1,3 @@
-# SAP-ODATA
-ODATA
+# ODATA
+
+Synced automatically from Notion.
