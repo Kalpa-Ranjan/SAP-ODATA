@@ -39,11 +39,33 @@ def extract_block_text(block):
         return "\n---\n\n"
     else:
         return ""
+        
+def get_all_blocks(notion, block_id):
+    """Recursively fetch all Notion blocks, including nested children."""
+    all_blocks = []
+    next_cursor = None
+
+    while True:
+        response = notion.blocks.children.list(block_id=block_id, start_cursor=next_cursor)
+        results = response.get("results", [])
+        all_blocks.extend(results)
+
+        # Recursive call for nested children
+        for block in results:
+            if block.get("has_children"):
+                block["children"] = get_all_blocks(notion, block["id"])
+
+        if not response.get("has_more"):
+            break
+        next_cursor = response.get("next_cursor")
+
+    return all_blocks
 
 def get_page_content(page_id):
     """Fetch all Notion blocks as markdown text"""
-    blocks = notion.blocks.children.list(block_id=page_id).get("results", [])
+    blocks = get_all_blocks(notion, page_id)
     return "".join(extract_block_text(b) for b in blocks)
+
 
 def update_readme(content):
     """Create or update README.md (or any specified file) in the repo"""
