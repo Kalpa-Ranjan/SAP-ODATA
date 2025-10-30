@@ -1,0 +1,32 @@
+name: Sync Notion to GitHub
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # runs every 6 hours
+  workflow_dispatch:        # allows manual trigger from Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install notion-client PyGithub
+
+      - name: Run Notion Sync Script
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          PAGE_ID: ${{ secrets.PAGE_ID }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_NAME: ${{ secrets.REPO_NAME }}
+        run: |
+          python sync_notion.py
